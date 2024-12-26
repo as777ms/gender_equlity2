@@ -97,6 +97,8 @@ const Specialprojects = () => {
             <option value="credit-card">Credit Card</option>
             <option value="paypal">PayPal</option>
             <option value="bank-transfer">Bank Transfer</option>
+            <option value="bank-city"> Dushanbe City</option>
+            <option value="bank-alif">Alif</option>
           </select>
         </div>
 
