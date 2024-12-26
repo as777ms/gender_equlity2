@@ -10,8 +10,8 @@ const Headercards = ({ huggingpeople }) => {
   <p className="text-lg text-center">
     Enjoy all the resources you need to stay safe, support loved ones, and make informed decisions in
     your journey toward healing and empowerment.
-  </p>
-</div>
+    </p>
+    </div>
 
       <div className="bg-gradient-to-r from-indigo-200 via-blue-100 to-white py-16 px-4 md:px-0">
         <div className="flex flex-col md:flex-row w-[90%] mx-auto my-8 justify-between">

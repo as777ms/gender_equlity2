@@ -21,12 +21,14 @@ import womenblond from './assets/img/womenblond.jpg'
 import emily from './assets/img/emily.jpg'
 import together from './assets/img/together.jpg'
 import togetherhug from './assets/img/togetherhug.jpeg'
+import SUPPORTteam from './assets/img/hello.jpg'
+import blackImg from './assets/img/black.jpeg'
 const App = () => {
   return (
     <Router>
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home headerimg={headerimg} imgheader2={imgheader2} womenhug={womenhug} huggingpeople={huggingpeople} location={location} womenlaptop={womenlaptop} handsshake={handsshake} manshakehand={manshakehand} womenblond={womenblond} emily={emily} together={together} togetherhug={togetherhug}/>} />
+        <Route index element={<Home headerimg={headerimg} imgheader2={imgheader2} womenhug={womenhug} huggingpeople={huggingpeople} location={location} womenlaptop={womenlaptop} handsshake={handsshake} manshakehand={manshakehand} womenblond={womenblond} emily={emily} together={together} togetherhug={togetherhug} SUPPORTteam={SUPPORTteam} blackImg={blackImg}/>} />
         <Route path="about" element={<About />} />
         <Route path="info" element={<Info />} />
         <Route path="*" element={<NotFound />} />
