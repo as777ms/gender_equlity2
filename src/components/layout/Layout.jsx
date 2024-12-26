@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaTelegram, FaPhoneAlt, FaBars } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import Support from '../../pages/support/Support';
+import Footers from '../footers/Footers';
 
 const Layout = () => {
   const { t, i18n } = useTranslation();
@@ -88,9 +89,8 @@ const Layout = () => {
               { to: '/about', label: t('about') },
               { to: '/support', label: t('support') },
               { to: '/info', label: t('info') },
-              { to: '/anonymsms', label: t('Anonimnii istorii') },
-              { to: '/specialprojects', label: t('Special Projects') },
               { to: '/stories', label: t('istorii') },
+              { to: '/specialprojects', label: t('Special Projects') },
             ].map((link, index) => (
               <Link
                 key={index}
@@ -148,14 +148,11 @@ const Layout = () => {
           <Link to="/info" className="hover:underline hover:text-blue-600">
             {t('info')}
           </Link>
-          <Link to="/anonymsms" className="hover:underline hover:text-blue-600">
-            {t('Anonimnii istorii')}
-          </Link>
-          <Link to="/specialprojects" className="hover:underline hover:text-blue-600">
-            {t('spesproekti')}
-          </Link>
           <Link to="/stories" className="hover:underline hover:text-blue-600">
             {t('istorii')}
+          </Link>
+          <Link to="/specialprojects" className="hover:underline hover:text-blue-600">
+            {t('donate')}
           </Link>
         </div>
       </nav>
@@ -163,7 +160,6 @@ const Layout = () => {
       {/* Main Content */}
       <main className="bg-gray-50">
         <Outlet />
-        <Support />
       </main>
 
       {/* Footer */}
