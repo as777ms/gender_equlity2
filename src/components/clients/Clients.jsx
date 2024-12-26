@@ -54,7 +54,7 @@ const Clients = ({ together }) => {
   };
 
   return (
-    <div className="relative py-20 px-6 flex flex-col items-center bg-gradient-to-br from-blue-50 via-white to-blue-100">
+    <div className="relative py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center bg-gradient-to-br from-blue-50 via-white to-blue-100">
       <div className="absolute inset-0 flex justify-center items-center z-0">
         <img
           src={together}
@@ -64,7 +64,7 @@ const Clients = ({ together }) => {
       </div>
 
       <div className="z-10 flex flex-col items-center max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center">
           What Our Clients Are Saying
         </h1>
         <p className="text-center text-gray-600 mb-12 max-w-2xl">
@@ -89,18 +89,18 @@ const Clients = ({ together }) => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-lg p-10 md:flex items-center gap-8 overflow-hidden relative"
+                className="bg-white rounded-lg shadow-lg p-6 sm:p-10 md:flex items-center gap-6 sm:gap-8 overflow-hidden relative"
               >
-                <span className="absolute text-[150px] text-blue-200 top-0 left-0 opacity-10">
+                <span className="absolute text-[120px] sm:text-[150px] text-blue-200 top-0 left-0 opacity-10">
                   &quot;
                 </span>
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto md:mx-0"
+                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto md:mx-0"
                 />
                 <div className="mt-6 md:mt-0 text-center md:text-left">
-                  <h3 className="text-2xl font-semibold text-gray-800">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-800">
                     {testimonial.title}
                   </h3>
                   <p className="text-gray-700 mt-4 mb-4">
@@ -108,7 +108,7 @@ const Clients = ({ together }) => {
                   </p>
                   <p className="text-gray-500 italic">- {testimonial.name}</p>
                 </div>
-                <span className="absolute text-[150px] text-blue-200 bottom-0 right-0 opacity-10">
+                <span className="absolute text-[120px] sm:text-[150px] text-blue-200 bottom-0 right-0 opacity-10">
                   &quot;
                 </span>
               </div>
