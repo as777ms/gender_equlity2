@@ -90,7 +90,7 @@ const Layout = () => {
               { to: '/support', label: t('support') },
               { to: '/info', label: t('info') },
               { to: '/stories', label: t('istorii') },
-              { to: '/specialprojects', label: t('Special Projects') },
+              { to: '/specialprojects', label: t('Donate') },
             ].map((link, index) => (
               <Link
                 key={index}
